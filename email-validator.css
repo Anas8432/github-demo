@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+ul {
+    display: flex;
+    color:rgb(119, 117, 117);
+}
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul >li> a:hover {
+    color: rgb(180, 180, 228)
+}
+main {
+    min-height: 82vh;
+}
+.container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+.container h1 {
+    padding: 12px 0;
+}
+
+footer {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span, i {
+    font-size: 25px;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+#Email {
+    width: 30vw;
+    padding: 5px 0 5px 5px;
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    .container {
+        font-size: 12px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        padding: 6px 0;
+    }
+}

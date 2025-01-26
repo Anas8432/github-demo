@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-validator</title>
+    <link rel="stylesheet" href="email-validator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-regular fa-envelope"></i>
+                <span>iValidate</span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <!-- Text input for username -->
+                <label for="username"></label>
+                <input placeholder="Enter your Email to validate" type="text" id="Email" name="username" required>
+                <br><br>
+            
+                <!-- Submit button -->
+                <input id="submitBtn" class="button" type="submit" value="Submit">
+              </form>
+        </div>
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id="resultCont">
+                Your result will show here
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/">Copyright</a></li>
+            <li><a href="/">iValidate.com</a></li>
+            <li><a href="/">All Rights reserved</a></li>
+        </ul>
+    </footer>
+
+    <script src="email-validator.js"></script>
+</body>
+</html>
